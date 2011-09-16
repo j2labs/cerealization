@@ -29,6 +29,40 @@ You too can see that Python's ultrajson and Ryan Kelly and Zed Shaw's
 tnetstring serialization is faster than Node.js.  GIT R DONE!
 
 
+# Real Results!
+
+Now, these results are for multiple Python techniques of serialization, but
+keep an eye out for `ujson` and `tnetstring`.
+
+    $ python cereal.py 
+    Dumping:
+      json: 5.98301100731
+      simplejson: 6.78803396225
+      cjson: 2.19402098656
+      ujson: 0.719541072845
+      cPickle: 6.73631691933
+      tnetstrings: 20.1821420193
+      tnetstring: 0.82697892189
+    Loading:
+      json: 8.23215007782
+      simplejson: 3.65900611877
+      cjson: 1.69663691521
+      ujson: 1.13573312759
+      cPickle: 3.0421769619
+      tnetstrings: 29.0939230919
+      tnetstring: 0.711443185806
+
+Here is how Node.js did.  I threw in `eval()` but I think it'd be a mighty 
+unwise kinda choice to actually use it.
+
+    $ node cereal.js 
+    Dumping:
+      JSON: 2.023
+    Loading:
+      JSON: 1.885
+      eval(): 24.516
+
+
 # Gitting R Done At Home
 
 You just gotta git this here repo on your computer or your laptop of what have
