@@ -7,7 +7,7 @@ git-r-done.
 
 So what we got here is a python script that runs multiple types of
 serialization.  It knows how to do json in like five diffr'nt which ways.
-And it knows it how to do pickled output too.  (Them suckers taste DELICIOUS).
+And it knows how to do some pickled output too.  (Them suckers taste DELICIOUS).
 But it also knows how to do tnetstring's too.
 
 If you don't know about tnetstrings just send your internet location to
