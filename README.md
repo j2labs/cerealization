@@ -65,24 +65,23 @@ unwise kinda choice to actually use it.
 
 # Gitting R Done At Home
 
-You just gotta git this here repo on your computer or your laptop of what have
-you and so just go right ahead and clone this here repo.
-
-Go on now.
+You just gotta git this here repo on your computer or your laptop or what have
+you and then...  Go on now.
 
     $ cd ~/Desktop/
     $ git clone https://github.com/j2labs/cerealization.git
     $ cd cerealization
 
-OK.  Now for folks following along with me at home, just install them Python
-requirements like this here.
+OK.  Now for folks still following along with me at home, just install them
+Python requirements like this here.  I recommend using a virtualenv if you got
+'em.
 
     $ pip install -I -r ./py.reqs
 
-And maybe you still gotta install Node.js.  They can describe how that's done
-better than myself: [Installing Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
+And maybe you still gotta install Node.js.  Well, they can describe how that's
+done better than myself: [Installing Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
 
-You ready to git it done right good?!
+Alright! Let's do this!
 
     $ python cereal.py
     ...
