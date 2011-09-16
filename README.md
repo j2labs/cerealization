@@ -74,15 +74,15 @@ Go on now.
     $ git clone https://github.com/j2labs/cerealization.git
     $ cd cerealization
 
-OK.  Now for folks along with me at home, just install them Python
+OK.  Now for folks following along with me at home, just install them Python
 requirements like this here.
 
     $ pip install -I -r ./py.reqs
 
 And maybe you still gotta install Node.js.  They can describe how thats done
-better than me: [Installing Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
+better than myself: [Installing Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
 
-You ready to git it done right good?
+You ready to git it done right good?!
 
     $ python cereal.py
     ...
