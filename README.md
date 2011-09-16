@@ -22,10 +22,10 @@ let you know about a limited time offer.
 I'm just so excited about this!
 
 Right now, for a limited time, I'm gonna give you not just one, but TWO (!)
-cerailization files.  The first one is the speed testing Python like we
-discussed but the second one adds some Node.js to the experience!
+serialization files.  The first one is the speed testing Python code, just like
+we discussed, but the second code file adds some Node.js to the experience!
 
-You too can see that Python's ultrajson and Ryan Kelly and Zed Shaw's
+You too (!) can see that Python's ultrajson and Ryan Kelly and Zed Shaw's
 tnetstring serialization is faster than Node.js.  GIT R DONE!
 
 
