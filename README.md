@@ -79,7 +79,7 @@ requirements like this here.
 
     $ pip install -I -r ./py.reqs
 
-And maybe you still gotta install Node.js.  They can describe how thats done
+And maybe you still gotta install Node.js.  They can describe how that's done
 better than myself: [Installing Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) 
 
 You ready to git it done right good?!
