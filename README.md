@@ -26,7 +26,10 @@ serialization files.  The first one is the speed testing Python code, just like
 we discussed, but the second code file adds some Node.js to the experience!
 
 You too (!) can see that Python's ultrajson and Ryan Kelly and Zed Shaw's
-tnetstring serialization is faster than Node.js.  GIT R DONE!
+tnetstring serialization is faster than Node.js's `JSON.stringify` or
+`JSON.parse`.
+
+GIT R DONE!
 
 
 # Real Results!
