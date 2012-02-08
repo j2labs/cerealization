@@ -11,12 +11,20 @@ import cjson # python-cjson in pypi
 import ujson
 import tnetstrings # http://tnetstrings.org/tnetstrings.py
 import tnetstring
+import msgpack # msgpack-python
 
 ### Make cjson's interface match the others
 cjson.dumps = cjson.encode
 cjson.loads = cjson.decode
+
+### Same with tnetstring
 tnetstrings.dumps = tnetstrings.dump
 tnetstrings.loads = tnetstrings.parse
+
+### And msgpack too
+msgpack.dumps = msgpack.packb
+msgpack.loads = msgpack.unpackb
+
 
 ### Prepare data structures
 data_as_dict = {
@@ -30,12 +38,13 @@ data_as_json = json.dumps(data_as_dict)
 data_as_pickled = cPickle.dumps(data_as_dict)
 data_as_tnetstrings = tnetstrings.dumps(data_as_dict)
 data_as_tnetstring = data_as_tnetstrings
+data_as_msgpack = msgpack.dumps(data_as_dict)
 
 ### 
 num_loop_iterations = 1000000
 
 ### List of JSON implementations to test
-mods = [json, simplejson, cjson, ujson, cPickle, tnetstrings, tnetstring]
+mods = [json, simplejson, cjson, ujson, cPickle, tnetstrings, tnetstring, msgpack]
 
 
 ### Time dumping from native to JSON
@@ -57,6 +66,8 @@ for mod in mods:
         data = data_as_tnetstrings
     elif mod.__name__ == "tnetstring":
         data = data_as_tnetstring
+    elif mod.__name__ == "msgpack":
+        data = data_as_msgpack
         
     start = time.time()
     for i in xrange(num_loop_iterations):
